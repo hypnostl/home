@@ -1,0 +1,20 @@
+{
+  "name": "primeiro-projeto",
+  "version": "1.0.0",
+  "description": "testando npm",
+  "main": "index.js",
+  "dependencies": {
+    "global": "^4.4.0",
+    "lodash": "^4.17.21",
+    "primeiro-projeto": "file:",
+    "sass": "^1.77.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thiago",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.7.0"
+  }
+}
