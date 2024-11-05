@@ -1,8 +1,8 @@
 class Parcelas{
-    constructor(valorParcela, parcela, situacaoParcela){
+    constructor(valorParcela, parcela){
         this.valorParcela = valorParcela
         this.parcela = parcela
-        this.situacaoParcela = situacaoParcela
+        this.situacaoParcela = "Pendente"
     }
 }
 

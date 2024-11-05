@@ -3,27 +3,28 @@ const Emprestimo = require('./Emprestimo.js')
 const Transferencia = require('./Transferencia.js')
 
 class Conta extends (Deposito, Emprestimo, Transferencia){
-    #saldo = 0
-    constructor(depoisito, emprestimo, transferencia)
+    #saldo 
+
+    constructor(usuario)
     {
-        this.Deposito = depoisito
-        this.emprestimo = emprestimo
-        this.transferencia = transferencia
+        this.usuario = usuario
+        this.#saldo = 0
+        this.depositos = []
+        this.empresitmos = []
+        this.Transferencia = []
+
     }
-
-    novoDeposito(valor,data){
-       const deposito =  new Deposito(valor,data)
-        console.log(deposito)
-    }
-
-    novoEmprestimo(){}
-
-    transferencia(){}
-
+get saldo(){
+    return this.#saldo
 }
 
-const teste = new Conta(100,0,0)
-teste.novoDeposito(200,"20/06/2014")
+adicionaDeposito(deposito)
+{
+    this.#saldo += deposito.valor
+    this.depositos.push(deposito)
+}
+
+}
 
 
 module.exports = Deposito

@@ -1,16 +1,21 @@
-class Emprestimo{
-    #taxaDeJuros
-    constructor(valorEmprestimo, dataEmprestimo, parcelas){
-        this.#taxaDeJuros = 1.45
-        this.valorEmprestimo = valorEmprestimo
-        this.dataEmprestimo = dataEmprestimo
-        this.parcelas = parcelas
-    }
-    get taxaDeJuros()
-    {return this.#taxaDeJuros}
+const Parcelas = require("./Parcelas")
 
-    set taxaDeJuros(novoJuros)
-    { this.#taxaDeJuros = novoJuros}
+class Emprestimo{
+ static #taxaDeJuros = 1.05
+    constructor(valorEmprestimo, parcelas){
+        this.valorEmprestimo = valorEmprestimo
+        this.parcelas = []
+        for(let i = 1; i < parcelas; i++)
+        {this.parcelas.push(new Parcelas((valorEmprestimo * Emprestimo.#taxaDeJuros) / parcelas,i))}
+        this.datacriacao = new Date()
+    }
+    
+
+     static get taxaDeJuros()
+    {return Emprestimo.#taxaDeJuros}
+
+    static set taxaDeJuros(novoJuros)
+    { Emprestimo.#taxaDeJuros = 1 + (novoJuros / 100)}
 }
 
 module.exports = Emprestimo

@@ -1,8 +1,8 @@
 class Deposito{
-    constructor(valorDeposito, dataDeposito)
+    constructor(valorDeposito)
     {
         this.valorDeposito = valorDeposito
-        this.dataDeposito = dataDeposito
+        this.dataDeposito = new Date()
     }
 }
 module.exports = Deposito
