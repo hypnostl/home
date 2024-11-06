@@ -11,7 +11,7 @@ class Conta extends (Deposito, Emprestimo, Transferencia){
         this.#saldo = 0
         this.depositos = []
         this.empresitmos = []
-        this.Transferencia = []
+        this.transferencias = []
 
     }
 get saldo(){
@@ -24,6 +24,21 @@ adicionaDeposito(deposito)
     this.depositos.push(deposito)
 }
 
+adicionaEmprestimo(empresitmo)
+{
+    this.#saldo += empresitmo.valor
+    this.empresitmos.push(empresitmo)
+}
+
+adicionaTransferencia(transferencia)
+{
+    if(transferencia.usuarioEnvia.email === this.usuario.email)
+    {this.#saldo += transferencia.valor}
+    else if(transferencia.usuarioEnvia.email === this.nomeUsuario.email)
+    {this.#saldo -= transferencia.valor
+        this.transferencias.push(transferencia)
+    }
+}
 }
 
 

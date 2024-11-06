@@ -1,10 +1,10 @@
 const Usuario = require("./Usuario");
 
 class Transferencia extends Usuario{
-    constructor(usuarioTransferencia, usuarioReceptor, valorDeposito)
+    constructor(usuarioEnvia, usuarioRecebe, valorDeposito)
     {
-        this.usuarioTransferencia = usuarioTransferencia
-        this.usuarioReceptor = usuarioReceptor
+        this.usuarioEnvia = usuarioEnvia
+        this.usuarioRecebe = usuarioRecebe
         this.valorDeposito = valorDeposito
         this.dataDeposito = new Date()
     }
