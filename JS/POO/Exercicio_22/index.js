@@ -1,3 +1,4 @@
-const Transferencia = require("./Transferencia");
+const APP = require("./App")
 
-console.log("hellou world")
+APP.createUser("thiago@gmail.com","Thiago.l")
+
