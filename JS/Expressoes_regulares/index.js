@@ -3,13 +3,20 @@
     
 
 
-
 function validateEmail(email) {
     return emailRegex.test(email);
   }
   
-  // Testando
-  console.log(validateEmail("usuario@dominio.com")); // true
-  console.log(validateEmail("usuario@dominio"));     // false
-  console.log(validateEmail("usuario@.com"));        // false
-  console.log(validateEmail("usuario@@dominio.com")); // false
+
+  function puxarValor() {
+   
+    const login = document.getElementById("login").value
+    const passworld = document.getElementById("passworld").value
+    if(validateEmail(login) === true )
+    {
+        console.log("Login aceito")
+    }
+    else{console.log("Login não aceito")}
+    console.log("Valor do input:", login, passworld,validateEmail(login));
+  }
+
