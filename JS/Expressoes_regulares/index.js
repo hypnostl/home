@@ -1,10 +1,15 @@
 
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    
+const emailRegex = /^[a-zA-Z0-9_]{2,}@[a-zA-Z0-9]{2,}\.[a-zA-Z]{2,}$/;
+const senhaRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}[\]:;<>,.?~\\/-])[A-Za-z\d!@#$%^&*()_+{}[\]:;<>,.?~\\/-]{8,}$/;    
 
 
 function validateEmail(email) {
     return emailRegex.test(email);
+  }
+
+  function validarPassworld(passworld)
+  {
+    return senhaRegex.test(passworld)
   }
   
 
@@ -12,11 +17,16 @@ function validateEmail(email) {
    
     const login = document.getElementById("login").value
     const passworld = document.getElementById("passworld").value
-    if(validateEmail(login) === true )
-    {
-        console.log("Login aceito")
+    try{validateEmail(login) === true
+        validarPassworld(passworld) === true
     }
-    else{console.log("Login não aceito")}
-    console.log("Valor do input:", login, passworld,validateEmail(login));
+    catch(error){
+        alert("Login não aceito")
+    }
+    finally{
+        alert("Logado!!!")
+        console.log(login, passworld)
+        document.querySelector("error")
+    }
   }
 
