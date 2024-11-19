@@ -3,6 +3,16 @@
 //resolvida = resolved
 //rejeitada = rejected
 
+
+function execut ()
+{
+    return new Promise((resolved, rejected)=>{
+        console.log("A promise esta sendo executada")
+    },100)
+
+}
+
+
 const p = new Promise((resolved, rejected) => {
     console.log("A promise esta sendo executadda")
     setTimeout(()=>{
