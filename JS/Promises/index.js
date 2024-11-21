@@ -1,33 +1,17 @@
-
-// pondente = pending
-//resolvida = resolved
-//rejeitada = rejected
-
-
-function execut ()
-{
-    return new Promise((resolved, rejected)=>{
-        console.log("A promise esta sendo executada")
-    },100)
-
+function execute() {
+    return new Promise((resolve, reject) => {
+        console.log('A promise está sendo executada.')
+        setTimeout(() => {
+            console.log('Resolvendo a promise...')
+            resolve('Resultado')
+        }, 3 * 1000)
+    })
 }
 
-
-const p = new Promise((resolved, rejected) => {
-    console.log("A promise esta sendo executadda")
-    setTimeout(()=>{
-        if(true)
-        {
-            rejected(false)
-        }
-        console.log("Resolvendo a Promise ")
-        resolved(true)
-    },2000)
-})
-
+const p = execute()
 
 console.log(p)
 
-setTimeout(()=>{
+setTimeout(() => {
     console.log(p)
-},3000)
+}, 5 * 1000)
