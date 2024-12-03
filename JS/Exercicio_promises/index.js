@@ -30,9 +30,7 @@ function calculoImc(peso, altura)
   .catch((err) => {
     console.log(`Rejeitada ${err}`);
   })
-  .finally(() => {
-    console.log("Finalizada!");
-  });
+  console.log("Calculando....")
 }
 
 calculoImc(88, 1.8);
