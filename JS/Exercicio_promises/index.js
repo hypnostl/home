@@ -35,4 +35,4 @@ function calculoImc(peso, altura)
 
 calculoImc(88, 1.8);
 
-calculoImc(120,1,8)
+calculoImc("aaa",1,8)
