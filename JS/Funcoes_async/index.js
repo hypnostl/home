@@ -1,10 +1,23 @@
-const numbers = [4, 9, 5, 13, 77]
-
-async function asyncSquare(x) {
-    return x * x
-    
+async function asyncSum(a, b) {
+    if(typeof a !== 'number' ||typeof b !== 'number' ){
+        return Promise.reject("Os argumentos tem que ser numero")
+    }else{
+    return a + b}
 }
 
-Promise.all(numbers.map(number => asyncSquare(number))).then(squares => {
-    console.log(squares)
+async function asyncSubtract(a, b) {
+    if(typeof a !== 'number' ||typeof b !== 'number' ){
+        return Promise.reject("Os argumentos tem que ser numero")
+    }else{
+    return a - b}
+
+}
+
+const sumResult = asyncSum(50, 33)
+const subtractResult = asyncSubtract(50, 33)
+
+Promise.all([sumResult, subtractResult]).then(results => {
+    console.log(results)
+}).catch(err => {
+    console.log(err)
 })
