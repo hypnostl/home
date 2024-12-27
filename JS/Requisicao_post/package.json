@@ -1,0 +1,17 @@
+{
+  "name": "requisicao_post",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "json-server": "json-server --watch db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jason-server": "^3.0.0",
+    "json-server": "^1.0.0-beta.3",
+    "requisicao_post": "file:"
+  },
+  "description": ""
+}

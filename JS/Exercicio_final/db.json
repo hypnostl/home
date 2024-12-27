@@ -1,0 +1,14 @@
+{
+  "transactions": [
+    {
+      "name": "Freela",
+      "amount": 400,
+      "id": "1"
+    },
+    {
+      "name": "Salário",
+      "amount": 3200,
+      "id": "3"
+    }
+  ]
+}
