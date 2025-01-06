@@ -1,5 +1,4 @@
-const fs = require("node:fs");
-
+import fs from "node:fs"
 export function criar(conteudo) {
   fs.writeFile("meuarquivo.txt", conteudo, "utf-8", (err) => {
     if (err) {
@@ -17,15 +16,13 @@ export function reescrever(conteudo) {
       }
     });
     console.log("Arquivo reescrito com sucesso!");
-  } else {
-    console.log("Arquivo não exixte!");
-  }
+  } 
 }
 
 export function ler() {
   fs.readFile("./meuarquivo.txt", "utf-8", (err, data) => {
     if (err) {
-      console.log("Arquivo não encontrado");
+     return console.log("Arquivo não encontrado");
     }
     console.log(data);
   });
@@ -33,7 +30,11 @@ export function ler() {
 
 export function excluir() {
   fs.unlink("./meuarquivo.txt", (err) => {
-    console.log("Arquivo não existe");
+    if(err){
+    return console.log("Arquivo não existe");}
+
+      
   });
+  
 }
 

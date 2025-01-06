@@ -1,4 +1,3 @@
+import {criar, reescrever, excluir, ler} from "./index.js"
 
-const arquivo = require("./index.js")
-
-arquivo.criar("Novo arquivo de texto")
+ler()
