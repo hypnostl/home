@@ -1,6 +1,6 @@
 import fs from "node:fs"
 export function criar(conteudo) {
-  fs.writeFile("meuarquivo.txt", conteudo, "utf-8", (err) => {
+  fs.writeFileSync("meuarquivo.txt", conteudo, "utf-8", (err) => {
     if (err) {
       console.log("Não foi possivel criar o arquivo: ", err.message);
     }
