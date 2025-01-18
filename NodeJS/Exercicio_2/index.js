@@ -51,8 +51,9 @@ function salvarlog(
   }GB \n ${dataAtual} \n\n`;
 
   
+
     try {
-      fs.appendFileSync("./log.txt", textoLog);
+      fs.appendFileSync("./log/log.txt", textoLog);
       console.log("Informação adicionada com sucesso!");
     } catch (err) {
       console.error("Erro ao adicionar informação ao arquivo:", err);
@@ -60,7 +61,10 @@ function salvarlog(
 
 
 
-
+    const diretorioLog = ("log")
+    if(!fs.existsSync(diretorioLog))
+      {fs.mkdirSync(diretorioLog)}
+   
 
 criarLog()
 
