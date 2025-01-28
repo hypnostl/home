@@ -1,28 +1,72 @@
-SO: Windows 11 Pro 
+ 18 de janeiro de 2025 às 11:58:36 
+ SO: Windows 11 Pro 
  Arquitetura: x64 
  Processador: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz 
- Tempo de atividade: 94 
- Uso da memória: 13.014636993408203GB 
- 18 de janeiro de 2025 às 11:47:16 
+ Tempo de atividade: 95 
+ Uso da memória: 13.319709777832031GB 
+  
 
-SO: Windows 11 Pro 
+ 18 de janeiro de 2025 às 11:58:37 
+ SO: Windows 11 Pro 
  Arquitetura: x64 
  Processador: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz 
- Tempo de atividade: 94 
- Uso da memória: 13.049957275390625GB 
- 18 de janeiro de 2025 às 11:47:21 
+ Tempo de atividade: 95 
+ Uso da memória: 13.325511932373047GB 
+  
 
-SO: Windows 11 Pro 
+ 18 de janeiro de 2025 às 11:58:38 
+ SO: Windows 11 Pro 
  Arquitetura: x64 
  Processador: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz 
- Tempo de atividade: 94 
- Uso da memória: 13.041748046875GB 
- 18 de janeiro de 2025 às 11:47:22 
+ Tempo de atividade: 95 
+ Uso da memória: 13.311603546142578GB 
+  
 
-SO: Windows 11 Pro 
+ 18 de janeiro de 2025 às 11:58:39 
+ SO: Windows 11 Pro 
  Arquitetura: x64 
  Processador: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz 
- Tempo de atividade: 94 
- Uso da memória: 13.048355102539062GB 
- 18 de janeiro de 2025 às 11:47:22 
+ Tempo de atividade: 95 
+ Uso da memória: 13.31448745727539GB 
+  
+
+ 18 de janeiro de 2025 às 11:58:40 
+ SO: Windows 11 Pro 
+ Arquitetura: x64 
+ Processador: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz 
+ Tempo de atividade: 95 
+ Uso da memória: 13.306781768798828GB 
+  
+
+ 18 de janeiro de 2025 às 11:58:41 
+ SO: Windows 11 Pro 
+ Arquitetura: x64 
+ Processador: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz 
+ Tempo de atividade: 95 
+ Uso da memória: 13.314559936523438GB 
+  
+
+ 18 de janeiro de 2025 às 11:58:42 
+ SO: Windows 11 Pro 
+ Arquitetura: x64 
+ Processador: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz 
+ Tempo de atividade: 95 
+ Uso da memória: 13.308387756347656GB 
+  
+
+ 18 de janeiro de 2025 às 11:58:43 
+ SO: Windows 11 Pro 
+ Arquitetura: x64 
+ Processador: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz 
+ Tempo de atividade: 95 
+ Uso da memória: 13.30971908569336GB 
+  
+
+ 18 de janeiro de 2025 às 11:58:44 
+ SO: Windows 11 Pro 
+ Arquitetura: x64 
+ Processador: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz 
+ Tempo de atividade: 95 
+ Uso da memória: 13.303596496582031GB 
+  
 

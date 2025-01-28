@@ -46,28 +46,23 @@ function salvarlog(
   usoDaMemoria,
   dataAtual
 ) {
-  const textoLog = `SO: ${sistemaOperacional} \n Arquitetura: ${arq} \n Processador: ${processador} \n Tempo de atividade: ${tempoAtividade} \n Uso da memória: ${
+  const textoLog = ` ${dataAtual} \n SO: ${sistemaOperacional} \n Arquitetura: ${arq} \n Processador: ${processador} \n Tempo de atividade: ${tempoAtividade} \n Uso da memória: ${
     usoDaMemoria / 1024 / 1024 / 1024
-  }GB \n ${dataAtual} \n\n`;
+  }GB \n\n`;
 
-  
+  try {
+    fs.appendFileSync("./log/log.txt", textoLog);
+    console.log("Informação adicionada com sucesso!");
+  } catch (err) {
+    console.error("Erro ao adicionar informação ao arquivo:", err);
+  }
+}
 
-    try {
-      fs.appendFileSync("./log/log.txt", textoLog);
-      console.log("Informação adicionada com sucesso!");
-    } catch (err) {
-      console.error("Erro ao adicionar informação ao arquivo:", err);
-    }}
+const diretorioLog = "log";
+if (!fs.existsSync(diretorioLog)) {
+  fs.mkdirSync(diretorioLog);
+}
 
-
-
-    const diretorioLog = ("log")
-    if(!fs.existsSync(diretorioLog))
-      {fs.mkdirSync(diretorioLog)}
-   
-
-criarLog()
-
-// setInterval(() => {
-//   criarLog();
-// }, 1000);
+setInterval(() => {
+  criarLog();
+}, 1000);
