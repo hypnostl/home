@@ -7,7 +7,7 @@ const port = 3000;
 const viewsPath = path.join(__dirname, 'views');
 
 // Configura o Express para usar o EJS como engine de template
-app.set('view engine', 'ejs');
+app.set('ejs');
 app.set('views', viewsPath);
 
 // Define uma rota para a raiz do servidor (/) que renderiza um arquivo EJS
