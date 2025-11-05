@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Imagens 1000x1000px</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        #output { border: 1px solid #ccc; max-width: 300px; display: block; margin-top: 15px; }
+        .controls { margin-top: 20px; }
+        .controls button { padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer; margin-right: 10px; margin-bottom: 10px; }
+        .controls button:hover { background-color: #0056b3; }
+        .download-item { display: block; margin-bottom: 5px; color: #007bff; text-decoration: none; }
+        .download-item:hover { text-decoration: underline; }
+        #message { margin-top: 10px; font-weight: bold; color: green; }
+        #error-message { margin-top: 10px; font-weight: bold; color: red; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+
+    <h1>Redimensionar Imagem para 1000x1000px</h1>
+
+    <input type="file" id="imageInput" accept="image/*" multiple>
+
+    <div class="controls">
+        <button onclick="processMultipleImages()">Redimensionar Todas</button>
+        <button onclick="downloadAllAsZip()" id="downloadZipButton" style="display: none;">Baixar Todas como ZIP</button>
+        <button onclick="clearPage()">Limpar Página</button>
+    </div>
+
+    <div id="message"></div>
+    <div id="error-message"></div>
+
+    <h2>Resultados Individuais:</h2>
+    <div id="downloadContainer"></div>
+
+    <canvas id="imageCanvas" style="display: none;"></canvas>
+    <img id="output" alt="Pré-visualização (Desativada para Múltiplos)" style="display: none;">
+
+    <script src="resizer.js"></script>
+</body>
+</html>
